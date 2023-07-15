@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "aws s3 sync --profile ana --delete src s3://www.anabogatinovska.com --acl public-read && npm run invalidate",
-    "invalidate": "aws cloudfront --profile ana create-invalidation --distribution-id ENRZIHGKCZRIU --paths \"/*\" --output json"
+    "deploy": "aws s3 sync --profile ana --delete src s3://www.marinelakrstevska.com && npm run invalidate",
+    "invalidate": "aws cloudfront --profile ana create-invalidation --distribution-id E3DFXMUG6ZUSV0 --paths \"/*\" --output json" 
   },
   "repository": {
     "type": "git",
